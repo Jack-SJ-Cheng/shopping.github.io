@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="zh-Hant-TW">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>film cafe</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-light bg-light">
+        <form class="container-fluid">
+            <button class="btn btn-outline-success me-2" type="button">Main button</button>
+            <div class="ml-auto dropdown">
+                <button class="btn btn-sm ml-auto btn-cart dropdown-toggle" type="button" id="dropdownMenuButton"
+                    data-bs-toggle="dropdown" aria-expanded="false">
+                    <i class="fas fa-shopping-cart fa-2x"></i>
+                    <span class="badge rounded-pill bg-danger">12</span>
+                </button>
+                <div class="dropdown-menu px-2 py-3 dropdown-menu-end" style="min-width: 300px;">
+                    <h6>已選擇商品</h6>
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <a href="#removeModal" class="text-muted" data-bs-toggle="modal"
+                                        data-product="黃金曼特寧咖啡豆" data-num="1 磅"><i class="fas fa-trash-alt"></i></a>
+                                </td>
+                                <td class="align-middle">黃金曼特寧咖啡豆</td>
+                                <td>1 磅</td>
+                                <td>$600</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </form>
+    </nav>
+    <!-- reomveModal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger">確定</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let removeModal = document.getElementById('removeModal');
+        removeModal.addEventListener('show.bs.modal', function (e) {
+            let btn = e.relatedTarget;
+            console.log(btn);
+            let product = btn.getAttribute('data-product');
+            let num = btn.getAttribute('data-num');
+            console.log(product);
+            let modalContent = removeModal.querySelector('.modal-body');
+            modalContent.textContent = `確定刪除 ${product}${num}嗎?`
+        })
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

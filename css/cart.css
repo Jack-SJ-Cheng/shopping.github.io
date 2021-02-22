@@ -1,0 +1,9 @@
+.btn-cart {
+  background-color: transparent;
+  position: relative;
+}
+.btn-cart .badge {
+  position: absolute;
+  right: -2px;
+  top: -2px;
+}
