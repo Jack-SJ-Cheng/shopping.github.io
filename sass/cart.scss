@@ -1,9 +1,12 @@
+html{
+    // font-size: 14px;
+}
 .btn-cart{
     background-color: transparent;
     position: relative;
     .badge{
         position: absolute;
-        right: -2px;
-        top: -2px;
+        right: 2px;
+        top: 6px;
     }
 }

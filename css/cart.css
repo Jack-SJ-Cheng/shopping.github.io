@@ -4,6 +4,6 @@
 }
 .btn-cart .badge {
   position: absolute;
-  right: -2px;
-  top: -2px;
+  right: 2px;
+  top: 6px;
 }
