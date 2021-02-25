@@ -4,6 +4,27 @@
 }
 .btn-cart .badge {
   position: absolute;
-  right: 2px;
+  right: 4px;
   top: 6px;
+}
+
+.jumbotron-bg {
+  background-image: url("https://picsum.photos/id/1060/1200/400");
+  background-position: center center;
+  background-size: cover;
+  min-height: 400px;
+}
+
+.bg-lighter {
+  background-color: rgba(255, 255, 255, 0.25);
+  box-shadow: 1px 1px 10px 10px rgba(255, 255, 255, 0.25);
+}
+
+.bg-shadow {
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.25);
+  transition: box-shadow 0.3s;
+}
+
+.bg-shadow:hover {
+  box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.55);
 }
