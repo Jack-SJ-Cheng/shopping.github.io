@@ -17,15 +17,15 @@
 
 
 <body>
-    <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#">
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="shop.html">
             <img src="img/logo.png" width="30" height="30" alt="" loading="lazy">
         </a>
         <div class="dropdown">
             <button class="btn dropdown-toggle btn-cart" type="button" id="dropdownMenuButton" data-toggle="dropdown"
                 aria-haspopup="true" aria-expanded="false">
                 <i class="fas fa-shopping-cart fa-2x"></i>
-                <span class="badge badge-pill badge-danger">22</span>
+                <span class="badge badge-pill badge-danger">2</span>
             </button>
             <div class="dropdown-menu dropdown-menu-right px-3 py-2" style="width: 300px;"
                 aria-labelledby="dropdownMenuButton">
@@ -46,7 +46,7 @@
                         <td>$800</td>
                     </tr>
                 </table>
-                <button class="btn btn-primary btn-block btn-sm" type="submit">結帳去</button>
+                <a href="checkout.html" class="btn btn-primary btn-sm btn-block">結帳去</a>
             </div>
         </div>
     </nav>
@@ -81,8 +81,10 @@
                                 <div class="card border-0 h-100 bg-shadow">
                                     <img src="img/Garuda_Pancasila.jpg" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <h5 class="card-title">印尼</h5>
-                                        <h6 class="card-title">黃金曼特寧</h6>
+                                        <a href="product_mandheling.html" class="text-muted">
+                                            <h5 class="card-title">印尼</h5>
+                                            <h6 class="card-title">黃金曼特寧</h6>
+                                        </a>
                                         <small class="card-text text-secondary">藥草香、巧克力牛奶、焦糖、醇厚口感</small>
                                     </div>
                                     <div class="card-footer d-flex flex-column bg-white border-top-0">
@@ -106,8 +108,10 @@
                                 <img src="img/1920px-National_Emblem_of_Papua_New_Guinea.svg.png" class="card-img-top"
                                     alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">新幾內亞</h5>
-                                    <h6 class="card-title">天堂鳥 圓豆</h6>
+                                    <a href="product_sigri.html" class="text-muted">
+                                        <h5 class="card-title">新幾內亞</h5>
+                                        <h6 class="card-title">天堂鳥 圓豆</h6>
+                                    </a>
                                     <small class="card-text text-secondary">香草、柑橘、蔗糖、楓糖、堅果、巧克力</small>
                                 </div>
                                 <div class="card-footer d-flex flex-column bg-white">
@@ -129,8 +133,10 @@
                             <div class="card border-0 h-100 bg-shadow">
                                 <img src="img/1280px-Emblem_of_Ethiopia.svg.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">衣索比亞</h5>
-                                    <h6 class="card-title">耶加雪菲 迷霧山谷</h6>
+                                    <a href="product_yirgacheffe.html" class="text-muted">
+                                        <h5 class="card-title">衣索比亞</h5>
+                                        <h6 class="card-title">耶加雪菲 迷霧山谷</h6>
+                                    </a>
                                     <small class="card-text">覆盆子、鳳梨、丁香、荳蔻、草莓調</small>
                                 </div>
                                 <div class="card-footer d-flex flex-column bg-white">
@@ -152,8 +158,10 @@
                             <div class="card border-0 h-100 bg-shadow">
                                 <img src="img/1280px-Coat_of_arms_of_Brazil.svg.png" class="card-img-top" alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">巴西</h5>
-                                    <h6 class="card-title">巴烏莊園 黃象豆</h6>
+                                    <a href="product_bau.html" class="text-muted">
+                                        <h5 class="card-title">巴西</h5>
+                                        <h6 class="card-title">巴烏莊園 黃象豆</h6>
+                                    </a>
                                     <small class="card-text text-secondary">甜橙、濃郁生可可、烤核桃、口感扎實、油脂感佳、烏龍茶韻</small>
                                 </div>
                                 <div class="card-footer d-flex flex-column bg-white">
@@ -174,6 +182,13 @@
             </div>
         </div>
     </div>
+    <footer class="bg-secondary p-3">
+        <div class="container">
+            <h3 class="text-film">啡影咖啡館</h3>
+            <address class="m-1">高雄市新興區尚義街165號</address>
+            <p class="m-1">07-5555555</p>
+        </div>
+    </footer>
 
     <!-- removeModal -->
     <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">

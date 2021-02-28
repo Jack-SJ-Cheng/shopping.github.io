@@ -27,3 +27,14 @@ html{
 .bg-shadow:hover{
     box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.55);
 }
+.text-film{
+    color: rgba(161, 116, 76, 0.95);
+    text-shadow: 0.5px 0.5px 5px rgba(0, 0, 0, 0.25);
+    font-family: 'Times New Roman', Times, serif;
+}
+.bg-cover{
+    background-size: cover;
+}
+.line-hight-2{
+    line-height: 2em;
+}

@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cart.css">
+    <title>film cafe</title>
+    <script src="https://kit.fontawesome.com/95baea9f17.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="shop.html">
+            <img src="img/logo.png" width="30" height="30" alt="" loading="lazy">
+        </a>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle btn-cart" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span class="badge badge-pill badge-danger">2</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right px-3 py-2" style="width: 300px;"
+                aria-labelledby="dropdownMenuButton">
+                <h6>you have already selected.</h6>
+                <table class="table" style="font-size: 90%;">
+                    <tr>
+                        <td><a class="text-muted" href="#removeModal" data-toggle="modal" data-product="黃金曼特寧"
+                                data-num="1磅"><i class="far fa-trash-alt"></i></a></td>
+                        <td>黃金曼特寧</td>
+                        <td>1磅</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td><a class="text-muted" href="#removeModal" data-toggle="modal" data-product="耶加雪菲"
+                                data-num="1磅"><i class="far fa-trash-alt"></i></a></td>
+                        <td>耶加雪菲</td>
+                        <td>1磅</td>
+                        <td>$800</td>
+                    </tr>
+                </table>
+                <button class="btn btn-primary btn-block btn-sm" type="submit">結帳去</button>
+            </div>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid jumbotron-bg d-flex align-items-end">
+        <div class="bg-lighter p-3">
+            <div class="container">
+                <h1 class="display-5">來一杯暖心的咖啡</h1>
+                <p class="lead">This is a modified jumbotron that occupies the entire horizontal space of its parent.
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <nav aria-label="breadcrumb" class="sticky-top" style="top: 60px;">
+            <ol class="breadcrumb bg-transparent">
+                <li class="breadcrumb-item"><a href="shop.html">首頁</a></li>
+                <li class="breadcrumb-item"><a href="shop.html#brazil">巴西</a></li>
+                <li class="breadcrumb-item active" aria-current="page">巴烏莊園 黃象豆</li>
+            </ol>
+        </nav>
+        <div class="row">
+            <div class="col-4">
+                <div class="sticky-top" style="top: 100px;">
+
+                    <h1 class="h3">巴烏莊園 黃象豆</h1>
+                    <div class="d-flex align-items-end">
+                        <small class="text-secondary">售價<s>NT400/0.5磅</s></small>
+                        <strong class="ml-auto text-danger"><em>特價 NT350/0.5磅</em></strong>
+                    </div>
+                    <div class="d-flex mt-3">
+                        <div class="btn-group btn-group-toggle btn-group-sm w-50" data-toggle="buttons">
+                            <label class="btn btn-outline-secondary active w-50">
+                                <input type="radio" name="options" id="option1" checked> 0.5磅
+                            </label>
+                            <label class="btn btn-outline-secondary w-50">
+                                <input type="radio" name="options" id="option2"> 1磅
+                            </label>
+                        </div>
+                        <a href="#" class="btn btn-primary ml-auto btn-sm">加入購物車</a>
+                    </div>
+
+                </div>
+
+            </div>
+            <div class="col-8">
+                <img src="img/1280px-Coat_of_arms_of_Brazil.svg.png" alt="" class="w-75">
+                <p class="mt-3 line-hight-2"><b
+                        class="text-danger h3">巴</b>烏莊園是專門向日本、美國、意大利、比利時、瑞典、荷蘭出口精品咖啡的農場，在完全專業化的業務模式中，整個家庭都參與了巴烏莊園的運營，他們的努力始終致力於生產出口的優質咖啡。另外，巴西也是咖啡生產第一大國，提供世界上將近半數的咖啡生豆。
+                </p>
+                <img src="img/bau.jpg" alt="" class="w-100">
+                <p class="h5 text-film my-3">風味敘述：甜橙、濃郁生可可、烤核桃、口感扎實、油脂感佳、烏龍茶韻</p>
+            </div>
+        </div>
+    </div>
+    <footer class="bg-secondary p-3">
+        <div class="container">
+            <h3 class="text-film">啡影咖啡館</h3>
+            <address class="m-1">高雄市新興區尚義街165號</address>
+            <p class="m-1">07-5555555</p>
+        </div>
+    </footer>
+
+    <!-- removeModal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">確定刪除?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-outline-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#removeModal').on('show.bs.modal', function (e) {
+                let btn = e.relatedTarget;
+                let product = btn.getAttribute('data-product');
+                let modal = $(this);
+                modal.find('.modal-body').text(product);
+            })
+        });
+    </script>
+</body>
+
+</html>

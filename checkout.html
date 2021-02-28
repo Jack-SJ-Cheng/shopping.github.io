@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/cart.css">
+    <link rel="stylesheet" href="css/checkout.css">
+    <title>film cafe</title>
+    <script src="https://kit.fontawesome.com/95baea9f17.js" crossorigin="anonymous"></script>
+</head>
+
+
+
+<body>
+    <nav class="navbar navbar-light bg-light sticky-top">
+        <a class="navbar-brand" href="shop.html">
+            <img src="img/logo.png" width="30" height="30" alt="" loading="lazy">
+        </a>
+        <div class="dropdown">
+            <button class="btn dropdown-toggle btn-cart" type="button" id="dropdownMenuButton" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-shopping-cart fa-2x"></i>
+                <span class="badge badge-pill badge-danger">2</span>
+            </button>
+            <div class="dropdown-menu dropdown-menu-right px-3 py-2" style="width: 300px;"
+                aria-labelledby="dropdownMenuButton">
+                <h6>you have already selected.</h6>
+                <table class="table" style="font-size: 90%;">
+                    <tr>
+                        <td><a class="text-muted" href="#removeModal" data-toggle="modal" data-product="黃金曼特寧"
+                                data-num="1磅"><i class="far fa-trash-alt"></i></a></td>
+                        <td>黃金曼特寧</td>
+                        <td>1磅</td>
+                        <td>$500</td>
+                    </tr>
+                    <tr>
+                        <td><a class="text-muted" href="#removeModal" data-toggle="modal" data-product="耶加雪菲"
+                                data-num="1磅"><i class="far fa-trash-alt"></i></a></td>
+                        <td>耶加雪菲</td>
+                        <td>1磅</td>
+                        <td>$800</td>
+                    </tr>
+                </table>
+                <button class="btn btn-primary btn-block btn-sm" type="submit">結帳去</button>
+            </div>
+        </div>
+    </nav>
+    <section class="main container">
+        <h3 class="text-center mt-5">結帳</h2>
+        <div class="row text-center my-3 mx-3">
+            <div class="col-12 col-sm alert alert-primary rounded-pill mx-2" role="alert">1.輸入訂單資料</div>
+            <div class="col-12 col-sm alert alert-light rounded-pill mx-2" role="alert">2.輸入付款資料</div>
+            <div class="col-12 col-sm alert alert-light rounded-pill mx-2" role="alert">3.完成</div>
+        </div>
+    </section>
+    <footer class="bg-secondary p-3">
+        <div class="container">
+            <h3 class="text-film">啡影咖啡館</h3>
+            <address class="m-1">高雄市新興區尚義街165號</address>
+            <p class="m-1">07-5555555</p>
+        </div>
+    </footer>
+
+    <!-- removeModal -->
+    <div class="modal fade" id="removeModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-danger text-light">
+                    <h5 class="modal-title" id="exampleModalLabel">確定刪除?</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                    <button type="button" class="btn btn-outline-danger">Delete</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function () {
+            $('#removeModal').on('show.bs.modal', function (e) {
+                let btn = e.relatedTarget;
+                let product = btn.getAttribute('data-product');
+                let modal = $(this);
+                modal.find('.modal-body').text(product);
+            })
+        });
+    </script>
+</body>
+
+</html>
